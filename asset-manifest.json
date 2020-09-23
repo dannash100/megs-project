@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/megs-project/static/css/main.31ae2ba0.chunk.css",
-    "main.js": "/megs-project/static/js/main.790c11bf.chunk.js",
-    "main.js.map": "/megs-project/static/js/main.790c11bf.chunk.js.map",
+    "main.css": "/megs-project/static/css/main.28283439.chunk.css",
+    "main.js": "/megs-project/static/js/main.3f2a3683.chunk.js",
+    "main.js.map": "/megs-project/static/js/main.3f2a3683.chunk.js.map",
     "runtime-main.js": "/megs-project/static/js/runtime-main.986625c5.js",
     "runtime-main.js.map": "/megs-project/static/js/runtime-main.986625c5.js.map",
     "static/js/2.4a1023d0.chunk.js": "/megs-project/static/js/2.4a1023d0.chunk.js",
     "static/js/2.4a1023d0.chunk.js.map": "/megs-project/static/js/2.4a1023d0.chunk.js.map",
     "index.html": "/megs-project/index.html",
-    "precache-manifest.88a44f81cbf53d041f7a00586adb75b9.js": "/megs-project/precache-manifest.88a44f81cbf53d041f7a00586adb75b9.js",
+    "precache-manifest.5cbf1c97630034d98c485e273175849e.js": "/megs-project/precache-manifest.5cbf1c97630034d98c485e273175849e.js",
     "service-worker.js": "/megs-project/service-worker.js",
-    "static/css/main.31ae2ba0.chunk.css.map": "/megs-project/static/css/main.31ae2ba0.chunk.css.map",
+    "static/css/main.28283439.chunk.css.map": "/megs-project/static/css/main.28283439.chunk.css.map",
     "static/js/2.4a1023d0.chunk.js.LICENSE.txt": "/megs-project/static/js/2.4a1023d0.chunk.js.LICENSE.txt",
     "static/media/Bed stretch.jpg": "/megs-project/static/media/Bed stretch.94ce0134.jpg",
     "static/media/City night.jpg": "/megs-project/static/media/City night.05d10f15.jpg",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.986625c5.js",
     "static/js/2.4a1023d0.chunk.js",
-    "static/css/main.31ae2ba0.chunk.css",
-    "static/js/main.790c11bf.chunk.js"
+    "static/css/main.28283439.chunk.css",
+    "static/js/main.3f2a3683.chunk.js"
   ]
 }
