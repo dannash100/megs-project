@@ -4,6 +4,15 @@ import CrossfadeImage from "./CrossfadeImage";
 
 import logo from "./images/cnz_logo_png_white.png";
 
+export const crossfadeInterval = 8000;
+const delayOptions = 4;
+
+const delays = [...Array(delayOptions).keys()].map(
+  (i) => (crossfadeInterval / delayOptions) * (i + 1)
+);
+
+const randomDelay = () => delays[Math.floor(Math.random() * delays.length)];
+
 const get4x4Matrix = () => {
   const matrix = [];
   let count = 0;
@@ -26,7 +35,7 @@ function App() {
           <div className="row">
             {row.map((key) => (
               <div className="box">
-                <CrossfadeImage on={false} i={key} />
+                <CrossfadeImage on delay={randomDelay()} startIdx={key} />
               </div>
             ))}
           </div>
