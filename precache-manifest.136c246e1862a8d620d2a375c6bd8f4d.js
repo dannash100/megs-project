@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "251b652faf2454e96f4672be7492d167",
+    "revision": "b056eea7dd071b42e248383c6cd43aa2",
     "url": "/megs-project/index.html"
   },
   {
-    "revision": "b8aa9f6b3bf1ab724131",
-    "url": "/megs-project/static/css/main.28283439.chunk.css"
+    "revision": "16ccb3dbf62a388ccac5",
+    "url": "/megs-project/static/css/main.805b3548.chunk.css"
   },
   {
     "revision": "38317a63c4806c5ca2f8",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/megs-project/static/js/2.5b53dde5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b8aa9f6b3bf1ab724131",
+    "revision": "16ccb3dbf62a388ccac5",
     "url": "/megs-project/static/js/main.3616bf8f.chunk.js"
   },
   {
