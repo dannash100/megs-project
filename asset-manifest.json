@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/megs-project/static/css/main.5f361e03.chunk.css",
+    "main.js": "/megs-project/static/js/main.00083c24.chunk.js",
+    "main.js.map": "/megs-project/static/js/main.00083c24.chunk.js.map",
+    "runtime-main.js": "/megs-project/static/js/runtime-main.986625c5.js",
+    "runtime-main.js.map": "/megs-project/static/js/runtime-main.986625c5.js.map",
+    "static/js/2.0845e138.chunk.js": "/megs-project/static/js/2.0845e138.chunk.js",
+    "static/js/2.0845e138.chunk.js.map": "/megs-project/static/js/2.0845e138.chunk.js.map",
+    "index.html": "/megs-project/index.html",
+    "precache-manifest.82883236363ea4f4ed38f2428e5e3429.js": "/megs-project/precache-manifest.82883236363ea4f4ed38f2428e5e3429.js",
+    "service-worker.js": "/megs-project/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/megs-project/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.0845e138.chunk.js.LICENSE.txt": "/megs-project/static/js/2.0845e138.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/megs-project/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.986625c5.js",
+    "static/js/2.0845e138.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.00083c24.chunk.js"
+  ]
+}
