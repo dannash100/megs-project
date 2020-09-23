@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/megs-project/static/css/main.afc24099.chunk.css",
-    "main.js": "/megs-project/static/js/main.1cd01112.chunk.js",
-    "main.js.map": "/megs-project/static/js/main.1cd01112.chunk.js.map",
+    "main.css": "/megs-project/static/css/main.31ae2ba0.chunk.css",
+    "main.js": "/megs-project/static/js/main.790c11bf.chunk.js",
+    "main.js.map": "/megs-project/static/js/main.790c11bf.chunk.js.map",
     "runtime-main.js": "/megs-project/static/js/runtime-main.986625c5.js",
     "runtime-main.js.map": "/megs-project/static/js/runtime-main.986625c5.js.map",
-    "static/js/2.a8c56148.chunk.js": "/megs-project/static/js/2.a8c56148.chunk.js",
-    "static/js/2.a8c56148.chunk.js.map": "/megs-project/static/js/2.a8c56148.chunk.js.map",
+    "static/js/2.4a1023d0.chunk.js": "/megs-project/static/js/2.4a1023d0.chunk.js",
+    "static/js/2.4a1023d0.chunk.js.map": "/megs-project/static/js/2.4a1023d0.chunk.js.map",
     "index.html": "/megs-project/index.html",
-    "precache-manifest.197e946116a65727272cd3c092832ab6.js": "/megs-project/precache-manifest.197e946116a65727272cd3c092832ab6.js",
+    "precache-manifest.88a44f81cbf53d041f7a00586adb75b9.js": "/megs-project/precache-manifest.88a44f81cbf53d041f7a00586adb75b9.js",
     "service-worker.js": "/megs-project/service-worker.js",
-    "static/css/main.afc24099.chunk.css.map": "/megs-project/static/css/main.afc24099.chunk.css.map",
-    "static/js/2.a8c56148.chunk.js.LICENSE.txt": "/megs-project/static/js/2.a8c56148.chunk.js.LICENSE.txt",
+    "static/css/main.31ae2ba0.chunk.css.map": "/megs-project/static/css/main.31ae2ba0.chunk.css.map",
+    "static/js/2.4a1023d0.chunk.js.LICENSE.txt": "/megs-project/static/js/2.4a1023d0.chunk.js.LICENSE.txt",
     "static/media/Bed stretch.jpg": "/megs-project/static/media/Bed stretch.94ce0134.jpg",
     "static/media/City night.jpg": "/megs-project/static/media/City night.05d10f15.jpg",
     "static/media/Escalator.jpg": "/megs-project/static/media/Escalator.f0d0a288.jpg",
@@ -31,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.986625c5.js",
-    "static/js/2.a8c56148.chunk.js",
-    "static/css/main.afc24099.chunk.css",
-    "static/js/main.1cd01112.chunk.js"
+    "static/js/2.4a1023d0.chunk.js",
+    "static/css/main.31ae2ba0.chunk.css",
+    "static/js/main.790c11bf.chunk.js"
   ]
 }

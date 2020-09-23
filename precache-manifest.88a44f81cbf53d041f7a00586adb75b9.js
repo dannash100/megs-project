@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce5741376dc3b5895051b05fa1a76f20",
+    "revision": "dc0020fa91dd1dbe87ed3792593f68c1",
     "url": "/megs-project/index.html"
   },
   {
-    "revision": "60e588ce4e710d25bd94",
-    "url": "/megs-project/static/css/main.afc24099.chunk.css"
+    "revision": "d768f59339ca354269f5",
+    "url": "/megs-project/static/css/main.31ae2ba0.chunk.css"
   },
   {
-    "revision": "ca6665945f97b9b7539f",
-    "url": "/megs-project/static/js/2.a8c56148.chunk.js"
+    "revision": "09a852f0915653dea1ea",
+    "url": "/megs-project/static/js/2.4a1023d0.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/megs-project/static/js/2.a8c56148.chunk.js.LICENSE.txt"
+    "url": "/megs-project/static/js/2.4a1023d0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "60e588ce4e710d25bd94",
-    "url": "/megs-project/static/js/main.1cd01112.chunk.js"
+    "revision": "d768f59339ca354269f5",
+    "url": "/megs-project/static/js/main.790c11bf.chunk.js"
   },
   {
     "revision": "51bf0f65af4f5c86baae",
