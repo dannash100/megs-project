@@ -1,23 +1,38 @@
 {
   "files": {
-    "main.css": "/megs-project/static/css/main.5f361e03.chunk.css",
-    "main.js": "/megs-project/static/js/main.0fe9dd96.chunk.js",
-    "main.js.map": "/megs-project/static/js/main.0fe9dd96.chunk.js.map",
+    "main.css": "/megs-project/static/css/main.afc24099.chunk.css",
+    "main.js": "/megs-project/static/js/main.1cd01112.chunk.js",
+    "main.js.map": "/megs-project/static/js/main.1cd01112.chunk.js.map",
     "runtime-main.js": "/megs-project/static/js/runtime-main.986625c5.js",
     "runtime-main.js.map": "/megs-project/static/js/runtime-main.986625c5.js.map",
-    "static/js/2.1b5936b0.chunk.js": "/megs-project/static/js/2.1b5936b0.chunk.js",
-    "static/js/2.1b5936b0.chunk.js.map": "/megs-project/static/js/2.1b5936b0.chunk.js.map",
+    "static/js/2.a8c56148.chunk.js": "/megs-project/static/js/2.a8c56148.chunk.js",
+    "static/js/2.a8c56148.chunk.js.map": "/megs-project/static/js/2.a8c56148.chunk.js.map",
     "index.html": "/megs-project/index.html",
-    "precache-manifest.a72fc6fd4f21cd52415e3880f71f91fa.js": "/megs-project/precache-manifest.a72fc6fd4f21cd52415e3880f71f91fa.js",
+    "precache-manifest.04eed97499e88aa283ea575dca7ce1e1.js": "/megs-project/precache-manifest.04eed97499e88aa283ea575dca7ce1e1.js",
     "service-worker.js": "/megs-project/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/megs-project/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.1b5936b0.chunk.js.LICENSE.txt": "/megs-project/static/js/2.1b5936b0.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/megs-project/static/media/logo.5d5d9eef.svg"
+    "static/css/main.afc24099.chunk.css.map": "/megs-project/static/css/main.afc24099.chunk.css.map",
+    "static/js/2.a8c56148.chunk.js.LICENSE.txt": "/megs-project/static/js/2.a8c56148.chunk.js.LICENSE.txt",
+    "static/media/Bed stretch.jpg": "/megs-project/static/media/Bed stretch.94ce0134.jpg",
+    "static/media/City night.jpg": "/megs-project/static/media/City night.05d10f15.jpg",
+    "static/media/Escalator.jpg": "/megs-project/static/media/Escalator.f0d0a288.jpg",
+    "static/media/Girl.jpg": "/megs-project/static/media/Girl.2633bf52.jpg",
+    "static/media/Kiss.jpg": "/megs-project/static/media/Kiss.972fe461.jpg",
+    "static/media/Pool.jpg": "/megs-project/static/media/Pool.c742b617.jpg",
+    "static/media/Pregnancy test.jpg": "/megs-project/static/media/Pregnancy test.a8ddb903.jpg",
+    "static/media/Sad boy 1.jpg": "/megs-project/static/media/Sad boy 1.98bfee9b.jpg",
+    "static/media/Sad boy 2.jpg": "/megs-project/static/media/Sad boy 2.2c20b7f4.jpg",
+    "static/media/Shower.jpg": "/megs-project/static/media/Shower.be0afcb6.jpg",
+    "static/media/Telephoto.jpg": "/megs-project/static/media/Telephoto.65246e45.jpg",
+    "static/media/Thumbsucker.jpg": "/megs-project/static/media/Thumbsucker.7eb964c9.jpg",
+    "static/media/Toenail.jpg": "/megs-project/static/media/Toenail.dc8f0ee5.jpg",
+    "static/media/baby.jpg": "/megs-project/static/media/baby.5d1c6b18.jpg",
+    "static/media/cnz_logo_png_white.png": "/megs-project/static/media/cnz_logo_png_white.db2e6c36.png",
+    "static/media/poolclock.jpg": "/megs-project/static/media/poolclock.ab5d6ad8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.986625c5.js",
-    "static/js/2.1b5936b0.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.0fe9dd96.chunk.js"
+    "static/js/2.a8c56148.chunk.js",
+    "static/css/main.afc24099.chunk.css",
+    "static/js/main.1cd01112.chunk.js"
   ]
 }
