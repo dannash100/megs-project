@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/megs-project/static/css/main.90422770.chunk.css",
-    "main.js": "/megs-project/static/js/main.d7403a5c.chunk.js",
-    "main.js.map": "/megs-project/static/js/main.d7403a5c.chunk.js.map",
+    "main.js": "/megs-project/static/js/main.87d5ace0.chunk.js",
+    "main.js.map": "/megs-project/static/js/main.87d5ace0.chunk.js.map",
     "runtime-main.js": "/megs-project/static/js/runtime-main.986625c5.js",
     "runtime-main.js.map": "/megs-project/static/js/runtime-main.986625c5.js.map",
     "static/js/2.30f2682f.chunk.js": "/megs-project/static/js/2.30f2682f.chunk.js",
     "static/js/2.30f2682f.chunk.js.map": "/megs-project/static/js/2.30f2682f.chunk.js.map",
     "index.html": "/megs-project/index.html",
-    "precache-manifest.598cf047671b040d2212c0134cea8652.js": "/megs-project/precache-manifest.598cf047671b040d2212c0134cea8652.js",
+    "precache-manifest.290fd2f380a5297277416f7cacedb0fb.js": "/megs-project/precache-manifest.290fd2f380a5297277416f7cacedb0fb.js",
     "service-worker.js": "/megs-project/service-worker.js",
     "static/css/main.90422770.chunk.css.map": "/megs-project/static/css/main.90422770.chunk.css.map",
     "static/js/2.30f2682f.chunk.js.LICENSE.txt": "/megs-project/static/js/2.30f2682f.chunk.js.LICENSE.txt",
@@ -33,6 +33,6 @@
     "static/js/runtime-main.986625c5.js",
     "static/js/2.30f2682f.chunk.js",
     "static/css/main.90422770.chunk.css",
-    "static/js/main.d7403a5c.chunk.js"
+    "static/js/main.87d5ace0.chunk.js"
   ]
 }
