@@ -5,7 +5,7 @@ import images from "./images";
 
 const imageList = images.map((image, i) => ({ id: i, src: image }));
 
-const CrossfadeImage = ({ startIdx, on, delay }) => {
+const CrossfadeImage = ({ startIdx, on, delay, setVisible }) => {
   const [index, set] = useState(startIdx);
   const transitions = useTransition(imageList[index], (item) => item.id, {
     initial: { opacity: 1 },
@@ -13,15 +13,22 @@ const CrossfadeImage = ({ startIdx, on, delay }) => {
     enter: { opacity: 1 },
     leave: { opacity: 0 },
     config: config.molasses,
+    leave: ({ id }) => {
+      setVisible((visible) => new Set([...visible].filter((x) => x !== id)));
+    },
+    enter: ({ id }) => {
+      setVisible((visible) => new Set([...visible, id]));
+    },
   });
+
   useEffect(() => {
     setTimeout(() => {
-      setInterval(
-        () => set((val) => (val + 3) % imageList.length),
-        crossfadeInterval
-      );
+      setInterval(() => {
+        set((val) => (val + 2) % imageList.length);
+      }, crossfadeInterval);
     }, delay);
   }, []);
+
   return on ? (
     transitions.map(({ item, props, key }) => {
       return (

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, createContext } from "react";
 import "./App.css";
 import CrossfadeImage from "./CrossfadeImage";
 
 import logo from "./images/cnz_logo_png_white.png";
-
+import livestreams from "./livestreams";
 
 /**
  * <iframe src="https://g3.ipcamlive.com/player/player.php?alias=5f6417bdb19d7" width="800px" height="450px" 
@@ -28,12 +28,20 @@ Parameters:
 Don't forget to adjust the height of the IFRAME according to the ASPECT RATIO of your camera! 
  */
 
+export const appContext = createContext(null);
+
 export const crossfadeInterval = 8000;
 const delayOptions = 4;
 
 const delays = [...Array(delayOptions).keys()].map(
   (i) => (crossfadeInterval / delayOptions) * (i + 1)
 );
+
+const livestreamPositions = [
+  { x: 1, y: 3 },
+  { x: 2, y: 1 },
+  { x: 3, y: 2 },
+];
 
 const randomDelay = () => delays[Math.floor(Math.random() * delays.length)];
 
@@ -43,8 +51,17 @@ const get4x4Matrix = () => {
   for (var i = 0; i < 4; i++) {
     matrix[i] = [];
     for (var j = 0; j < 4; j++) {
-      matrix[i][j] = count % 14;
-      count++;
+      const liveStreamIndex = livestreamPositions.findIndex(
+        (pos) => pos.x === j && pos.y === i
+      );
+      if (liveStreamIndex === -1) {
+        matrix[i][j] = (
+          <CrossfadeImage on delay={randomDelay()} startIdx={count % 14} />
+        );
+        count++;
+      } else {
+        matrix[i][j] = livestreams[liveStreamIndex];
+      }
     }
   }
   return matrix;
@@ -52,14 +69,19 @@ const get4x4Matrix = () => {
 
 function App() {
   const [matrix, setMatrix] = useState(get4x4Matrix());
+  const [visible, setVisible] = useState([]);
+
+  console.log(visible);
   return (
     <div className="App">
       <div id="container">
-        {matrix.map((row) => (
-          <div className="row">
-            {row.map((key) => (
-              <div className="box">
-                <CrossfadeImage on delay={randomDelay()} startIdx={key} />
+        {matrix.map((row, i) => (
+          <div key={`${row}-${i}`} className="row">
+            {row.map((el, j) => (
+              <div key={`box-${i}-${j}`} className="box">
+                <appContext.Provider value={{ visible, setVisible }}>
+                  {el}
+                </appContext.Provider>
               </div>
             ))}
           </div>
