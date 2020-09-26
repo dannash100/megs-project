@@ -1,44 +1,71 @@
 import React, { useState, createContext, useEffect } from "react";
-import "./App.css";
-// import CrossfadeImage from "./CrossfadeImage";
 import CrossfadeImage from "react-crossfade-image";
+import { fixedShuffleIndex } from "./utils";
 
 import logo from "./images/cnz_logo_png_white.png";
-import livestreams from "./livestreams";
-
-import { useTransition, animated, config } from "react-spring";
 import images from "./images";
 
-const shuffle = (a) => {
-  return a.reduce((l, e, i) => {
-    const j = Math.floor(Math.random() * (a.length - i) + i); // j is in [i, a.length[
-    [a[i], a[j]] = [a[j], a[i]];
-    return a;
-  }, a);
-};
+import "./App.css";
 
-const fixedShuffleIndex = (a, f) => {
-  const w = shuffle(
-    a.reduce((acc, e, i) => {
-      if (!f[i]) {
-        acc.push(e);
-      }
-      return acc;
-    }, [])
+/** Start Config */
+
+// Crossfade settings
+const crossfadeTimingFunction = "cubic-bezier(0, 0.55, 0.45, 1)";
+const crossfadeDuration = 900;
+const crossfadeStyles = { width: "100%", height: "100%" };
+
+// Variations in which images will crossfade on interval
+const patternVariations = 30;
+
+// Livestream
+const livestreamPositions = [
+  { x: 2, y: 1 },
+  { x: 0, y: 2 },
+  { x: 3, y: 3 },
+];
+
+// Update time
+const minDelay = 3;
+const maxDelay = 6;
+/** End Config */
+
+const livestreamCodes = ["5f6417bdb19d7", "5f685b9105a1d", "5f685bd3cf2c3"];
+
+const Crossfade = ({ src }) => (
+  <CrossfadeImage
+    style={crossfadeStyles}
+    timingFunction={crossfadeTimingFunction}
+    duration={crossfadeDuration}
+    src={src}
+  />
+);
+
+const Livestream = ({ code }) => (
+  <div>
+    <iframe
+      key={code}
+      title={code}
+      src={`https://g3.ipcamlive.com/player/player.php?alias=${code}&autoplay=1&skin=white`}
+      width="auto"
+      height="100%"
+      frameBorder="0"
+    />
+  </div>
+);
+
+const Section = ({ src, pos }) => {
+  const { x, y } = pos;
+  const livestreamIndex = livestreamPositions.findIndex(
+    (lsPos) => lsPos.x == x && lsPos.y == y
   );
-  return f.reduce((acc, e, i) => {
-    if (e) {
-      acc.splice(i, 0, a[i]);
-    }
-    return acc;
-  }, w);
+  if (livestreamIndex === -1) {
+    return <Crossfade src={src} />;
+  } else {
+    return <Livestream code={livestreamCodes[livestreamIndex]} />;
+  }
 };
 
-/** config */
-const variations = 30;
-/** */
-
-const lists = [...Array(variations).keys()].map(() =>
+const lists = [...Array(patternVariations).keys()].map(() =>
   [...Array(images.length).keys()].map(() => Math.random() >= 0.5)
 );
 
@@ -48,11 +75,17 @@ function App() {
   const [imagez, setImages] = useState(images);
 
   const update = () => {
-    console.log(noChangeList);
-    setImages((oldVal) => fixedShuffleIndex(oldVal, noChangeList));
+    const random = Math.round(
+      Math.random() * Math.abs(maxDelay - minDelay) + minDelay
+    );
+    setTimeout(function () {
+      setImages((oldVal) => fixedShuffleIndex(oldVal, noChangeList));
+      console.log("Delayed " + random + " secs.");
+      update();
+    }, random * 1000);
   };
 
-  useEffect(() => void setInterval(update, 2000), []);
+  useEffect(update, []);
 
   useEffect(
     () =>
@@ -67,76 +100,28 @@ function App() {
     <div className="App">
       <div id="container">
         <div className="row">
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[0]}
-          />
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[1]}
-          />
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[2]}
-          />
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[3]}
-          />
+          <Section pos={{ x: 0, y: 0 }} src={imagez[0]} />
+          <Section pos={{ x: 1, y: 0 }} src={imagez[1]} />
+          <Section pos={{ x: 2, y: 0 }} src={imagez[2]} />
+          <Section pos={{ x: 3, y: 0 }} src={imagez[3]} />
         </div>
         <div className="row">
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[4]}
-          />
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[5]}
-          />
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[6]}
-          />
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[7]}
-          />
+          <Section pos={{ x: 0, y: 1 }} src={imagez[4]} />
+          <Section pos={{ x: 1, y: 1 }} src={imagez[5]} />
+          <Section pos={{ x: 2, y: 1 }} src={imagez[6]} />
+          <Section pos={{ x: 3, y: 1 }} src={imagez[7]} />
         </div>
         <div className="row">
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[8]}
-          />
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[9]}
-          />
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[10]}
-          />
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[11]}
-          />
+          <Section pos={{ x: 0, y: 2 }} src={imagez[8]} />
+          <Section pos={{ x: 1, y: 2 }} src={imagez[9]} />
+          <Section pos={{ x: 2, y: 2 }} src={imagez[10]} />
+          <Section pos={{ x: 3, y: 2 }} src={imagez[11]} />
         </div>
         <div className="row">
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[12]}
-          />
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[13]}
-          />
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[14]}
-          />
-          <CrossfadeImage
-            style={{ width: "100%", height: "100%" }}
-            src={imagez[1]}
-          />
+          <Section pos={{ x: 0, y: 3 }} src={imagez[12]} />
+          <Section pos={{ x: 1, y: 3 }} src={imagez[13]} />
+          <Section pos={{ x: 2, y: 3 }} src={imagez[14]} />
+          <Section pos={{ x: 3, y: 3 }} src={imagez[1]} />
         </div>
       </div>
 
