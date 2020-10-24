@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.45f44601.chunk.css",
-    "main.js": "/static/js/main.87f14760.chunk.js",
-    "main.js.map": "/static/js/main.87f14760.chunk.js.map",
+    "main.js": "/static/js/main.21b3966f.chunk.js",
+    "main.js.map": "/static/js/main.21b3966f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8b3e8c28.js",
     "runtime-main.js.map": "/static/js/runtime-main.8b3e8c28.js.map",
-    "static/js/2.641e0b54.chunk.js": "/static/js/2.641e0b54.chunk.js",
-    "static/js/2.641e0b54.chunk.js.map": "/static/js/2.641e0b54.chunk.js.map",
+    "static/js/2.e460850b.chunk.js": "/static/js/2.e460850b.chunk.js",
+    "static/js/2.e460850b.chunk.js.map": "/static/js/2.e460850b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.89304162a77a356885ab0fc803016afa.js": "/precache-manifest.89304162a77a356885ab0fc803016afa.js",
+    "precache-manifest.bd1253a3070a32ff1e73a581fd011225.js": "/precache-manifest.bd1253a3070a32ff1e73a581fd011225.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.45f44601.chunk.css.map": "/static/css/main.45f44601.chunk.css.map",
-    "static/js/2.641e0b54.chunk.js.LICENSE.txt": "/static/js/2.641e0b54.chunk.js.LICENSE.txt",
+    "static/js/2.e460850b.chunk.js.LICENSE.txt": "/static/js/2.e460850b.chunk.js.LICENSE.txt",
     "static/media/0. Baby kingsland.jpg": "/static/media/0. Baby kingsland.e80ba180.jpg",
     "static/media/1. baby beach.jpg": "/static/media/1. baby beach.61b04429.jpg",
     "static/media/10. Nails kingsland.jpg": "/static/media/10. Nails kingsland.8c71c1fd.jpg",
@@ -57,8 +57,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8b3e8c28.js",
-    "static/js/2.641e0b54.chunk.js",
+    "static/js/2.e460850b.chunk.js",
     "static/css/main.45f44601.chunk.css",
-    "static/js/main.87f14760.chunk.js"
+    "static/js/main.21b3966f.chunk.js"
   ]
 }
