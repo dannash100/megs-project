@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.45f44601.chunk.css",
+    "main.css": "/static/css/main.06ba7df8.chunk.css",
     "main.js": "/static/js/main.380f8800.chunk.js",
     "main.js.map": "/static/js/main.380f8800.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8b3e8c28.js",
@@ -8,9 +8,9 @@
     "static/js/2.bffe1303.chunk.js": "/static/js/2.bffe1303.chunk.js",
     "static/js/2.bffe1303.chunk.js.map": "/static/js/2.bffe1303.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ba202c2ae599e51857fb2bd2b4997be5.js": "/precache-manifest.ba202c2ae599e51857fb2bd2b4997be5.js",
+    "precache-manifest.63cc231c750b2299c5e5f124838bce80.js": "/precache-manifest.63cc231c750b2299c5e5f124838bce80.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.45f44601.chunk.css.map": "/static/css/main.45f44601.chunk.css.map",
+    "static/css/main.06ba7df8.chunk.css.map": "/static/css/main.06ba7df8.chunk.css.map",
     "static/js/2.bffe1303.chunk.js.LICENSE.txt": "/static/js/2.bffe1303.chunk.js.LICENSE.txt",
     "static/media/0. Baby kingsland.jpg": "/static/media/0. Baby kingsland.e80ba180.jpg",
     "static/media/1. baby beach.jpg": "/static/media/1. baby beach.61b04429.jpg",
@@ -59,7 +59,7 @@
   "entrypoints": [
     "static/js/runtime-main.8b3e8c28.js",
     "static/js/2.bffe1303.chunk.js",
-    "static/css/main.45f44601.chunk.css",
+    "static/css/main.06ba7df8.chunk.css",
     "static/js/main.380f8800.chunk.js"
   ]
 }
