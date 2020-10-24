@@ -4,6 +4,7 @@ import { fixedShuffleIndex } from "./utils";
 
 import logo from "./images/cnz_logo_png_white.png";
 import imageData from "./images";
+import giftVideo from "./images/The gift.mp4"
 
 import "./App.css";
 
@@ -19,9 +20,7 @@ const patternVariations = 30;
 
 // Livestream
 const livestreamPositions = [
-  { x: 2, y: 1 },
-  { x: 0, y: 2 },
-  { x: 3, y: 3 },
+  { x: 1, y: 1 },
 ];
 
 // Update time
@@ -42,10 +41,12 @@ const Crossfade = ({ src }) => (
 
 const Livestream = ({ code }) => (
   <div>
-    <iframe
+    <video
+      loop
+      autoPlay
       key={code}
       title={code}
-      src={`https://g3.ipcamlive.com/player/player.php?alias=${code}&autoplay=1&skin=white`}
+      src={giftVideo}
       width="auto"
       height="100%"
       style={{ height: "calc(100% + 1px)" }}
@@ -103,25 +104,25 @@ function App() {
           <Section pos={{ x: 0, y: 0 }} src={images[0]} />
           <Section pos={{ x: 1, y: 0 }} src={images[1]} />
           <Section pos={{ x: 2, y: 0 }} src={images[2]} />
-          <Section pos={{ x: 3, y: 0 }} src={images[3]} />
+          <Section pos={{ x: 3, y: 0 }} src={images[22]} />
         </div>
         <div className="row">
           <Section pos={{ x: 0, y: 1 }} src={images[4]} />
-          <Section pos={{ x: 1, y: 1 }} src={images[5]} />
+          <Section pos={{ x: 1, y: 1 }} src={images[18]} />
           <Section pos={{ x: 2, y: 1 }} src={images[6]} />
           <Section pos={{ x: 3, y: 1 }} src={images[7]} />
         </div>
         <div className="row">
           <Section pos={{ x: 0, y: 2 }} src={images[8]} />
           <Section pos={{ x: 1, y: 2 }} src={images[9]} />
-          <Section pos={{ x: 2, y: 2 }} src={images[10]} />
+          <Section pos={{ x: 2, y: 2 }} src={images[24]} />
           <Section pos={{ x: 3, y: 2 }} src={images[11]} />
         </div>
         <div className="row">
           <Section pos={{ x: 0, y: 3 }} src={images[12]} />
           <Section pos={{ x: 1, y: 3 }} src={images[13]} />
           <Section pos={{ x: 2, y: 3 }} src={images[14]} />
-          <Section pos={{ x: 3, y: 3 }} src={images[1]} />
+          <Section pos={{ x: 3, y: 3 }} src={images[28]} />
         </div>
       </div>
 

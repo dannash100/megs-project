@@ -1,6 +1,6 @@
 const shuffle = (a) => {
   return a.reduce((l, e, i) => {
-    const j = Math.floor(Math.random() * (a.length - i) + i); // j is in [i, a.length[
+    const j = Math.floor(Math.random() * (a.length - i) + i);
     [a[i], a[j]] = [a[j], a[i]];
     return a;
   }, a);
